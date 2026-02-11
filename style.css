@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f7f3ee;
+  --surface: #fffdf9;
+  --surface-soft: #f2ebe2;
+  --text: #3f3833;
+  --muted: #746960;
+  --accent: #c8754d;
+  --accent-hover: #b46641;
+  --border: #e6ddd2;
+  --footer: #3a2f2a;
+}
+
+body {
+  background-color: var(--bg) !important;
+  color: var(--text);
+  padding-top: 56px;
+}
+
+main.container {
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: var(--surface) !important;
+  border-color: var(--border) !important;
+}
+
+.navbar .container {
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  main.container,
+  .navbar .container {
+    max-width: 70%;
+  }
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--text) !important;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+  color: var(--accent) !important;
+}
+
+header.bg-primary-subtle {
+  background-color: var(--surface-soft) !important;
+  border-color: var(--border) !important;
+}
+
+header .text-primary-emphasis {
+  color: var(--text) !important;
+}
+
+header .text-secondary {
+  color: var(--muted) !important;
+}
+
+.card {
+  background-color: var(--surface);
+  border-color: var(--border);
+}
+
+.card-title {
+  color: var(--text);
+}
+
+.card-text {
+  color: var(--muted);
+}
+
+[dir="rtl"] .rentals-grid {
+  direction: rtl;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+footer.bg-dark {
+  background-color: var(--footer) !important;
+}
+
+.faq-section .rounded-4 {
+  background-color: var(--surface) !important;
+  border-color: var(--border) !important;
+}
+
+.faq-section .accordion-item {
+  border-color: var(--border);
+  background-color: var(--surface);
+}
+
+.faq-section .accordion-button {
+  background-color: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  background-color: var(--surface-soft);
+  color: var(--accent);
+  box-shadow: none;
+}
+
+.faq-section .accordion-button:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.25rem rgba(200, 117, 77, 0.2);
+}
+
+.faq-section .accordion-body {
+  color: var(--muted);
+}
+
+#welcomeCarousel {
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+#welcomeCarousel .carousel-item img {
+  height: 600px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #welcomeCarousel .carousel-item img {
+    height: 240px;
+  }
+}
